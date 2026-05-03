@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — Atlas Workout Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/icon-32.png">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <img class="logo" src="assets/icon-128.png" alt="">
+    <div>
+      <h1>Atlas Workout Tracker</h1>
+      <p class="tagline">Support</p>
+    </div>
+  </header>
+
+  <main>
+    <h1>Support</h1>
+
+    <h2>Contact</h2>
+    <p>
+      Bug reports, feature requests, and general questions:
+      <a href="mailto:aetherlabs21@gmail.com">aetherlabs21@gmail.com</a>.
+      Please include a brief description of what you were doing, what you
+      expected to happen, and what actually happened. Screenshots help.
+    </p>
+    <p>
+      Response time is best-effort &mdash; this is a personal project, not
+      a commercial product.
+    </p>
+
+    <h2>Common topics</h2>
+
+    <h3>Installation &amp; access</h3>
+    <p>
+      Atlas Workout Tracker is currently in <strong>limited release</strong>.
+      Access is granted via an unlisted Google Workspace Marketplace
+      listing &mdash; email the address above to request the install link.
+    </p>
+
+    <h3>Sign-in / authentication issues</h3>
+    <p>
+      The most common cause of the dialog failing to load is being signed
+      into multiple Google accounts in the same browser. The add-on opens
+      under one account but its background calls fall through to a
+      different account. Workarounds:
+    </p>
+    <ul>
+      <li>Use Chrome's Guest profile (no extensions, no other accounts) to verify the issue is multi-account-related.</li>
+      <li>Sign out of all other Google accounts in your browser, leave only the one you installed the add-on under.</li>
+      <li>Try a different browser if the above doesn't help.</li>
+    </ul>
+
+    <h3>Undo time limit</h3>
+    <p>
+      The "Undo last week creation" action restores the previous week
+      <strong>within 24 hours</strong> of creating a new week. After that
+      window, use Google Sheets' built-in version history
+      (<em>File &rarr; Version history &rarr; See version history</em>) to
+      restore an earlier state of the sheet.
+    </p>
+
+    <h3>Permissions / scopes</h3>
+    <p>
+      The add-on requests four narrow OAuth scopes &mdash;
+      <code>spreadsheets.currentonly</code> (per-file sheet access),
+      <code>drive.file</code> (per-file Drive access),
+      <code>script.container.ui</code> (display the dialog/sidebar), and
+      <code>script.locale</code> (read your locale for date/time
+      formatting). The broader <code>drive</code> or <code>spreadsheets</code>
+      scopes are NOT requested. Read the
+      <a href="privacy.html">privacy policy</a> for details.
+    </p>
+
+    <h3>Uninstall</h3>
+    <p>
+      Remove the add-on at any time from your Google Workspace add-ons
+      settings. This revokes all OAuth grants and prevents the add-on
+      from accessing your sheets.
+    </p>
+
+    <h2>Privacy &amp; terms</h2>
+    <p>
+      Read the <a href="privacy.html">Privacy Policy</a> and
+      <a href="terms.html">Terms of Service</a> for details on data
+      handling and use restrictions.
+    </p>
+  </main>
+
+  <footer class="site">
+    <div>&copy; 2026 Atlas Workout Tracker.</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="mailto:aetherlabs21@gmail.com">Contact</a>
+    </nav>
+  </footer>
+</div>
+</body>
+</html>
