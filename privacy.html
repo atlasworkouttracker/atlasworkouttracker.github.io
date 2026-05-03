@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Atlas Workout Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/icon-32.png">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <img class="logo" src="assets/icon-128.png" alt="">
+    <div>
+      <h1>Atlas Workout Tracker</h1>
+      <p class="tagline">Privacy policy</p>
+    </div>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="muted">Effective date: 3 May 2026 &middot; Last updated: 3 May 2026</p>
+
+    <h2>Summary</h2>
+    <div class="callout">
+      Atlas Workout Tracker runs entirely inside your own Google account.
+      It does not operate any servers, does not transmit your data to any
+      third party, does not use analytics or tracking, and does not
+      retain your data outside of Google's infrastructure. The only data
+      it accesses is the Google Sheet you open it on.
+    </div>
+
+    <h2>Who we are</h2>
+    <p>
+      Atlas Workout Tracker (the &ldquo;Add-on&rdquo;) is a Google Workspace
+      add-on developed and maintained by an individual developer. Contact:
+      <a href="mailto:aetherlabs21@gmail.com">aetherlabs21@gmail.com</a>.
+    </p>
+
+    <h2>What data the Add-on accesses</h2>
+    <p>
+      The Add-on requests the following Google OAuth scopes. Each is
+      narrowly scoped &mdash; the broader Drive or Sheets scopes are NOT
+      requested.
+    </p>
+    <ul>
+      <li>
+        <code>auth/spreadsheets.currentonly</code> &mdash; read and write
+        access to <em>only the Google Sheet you have open</em> while using
+        the Add-on. The Add-on cannot access any other spreadsheet in
+        your Drive.
+      </li>
+      <li>
+        <code>auth/drive.file</code> &mdash; per-file access limited to
+        files you explicitly open with the Add-on. The Add-on uses this
+        to identify the active spreadsheet; it cannot list or read any
+        other Drive content.
+      </li>
+      <li>
+        <code>auth/script.container.ui</code> &mdash; permission to
+        display the configuration dialog and side-panel cards inside the
+        Sheets host page.
+      </li>
+      <li>
+        <code>auth/script.locale</code> &mdash; reads your account's
+        locale (language and region) to format dates and times correctly.
+      </li>
+    </ul>
+
+    <h2>How the Add-on uses that access</h2>
+    <p>
+      The Add-on reads your spreadsheet's structure (week templates, RT
+      day rows, advanced-settings cells) and writes new rows to it when
+      you create a new week or initialize a new tracker. It does not
+      read or write any cell unrelated to its workout-tracking purpose.
+    </p>
+
+    <h2>Where data is stored</h2>
+    <ul>
+      <li>
+        <strong>Your spreadsheet</strong> &mdash; the only place workout
+        data lives. The Add-on creates rows there; you own and control
+        them.
+      </li>
+      <li>
+        <strong>An undo snapshot</strong> &mdash; a copy of the previous
+        week's pre-finalize state, stored in your account's Apps Script
+        UserProperties (Google's per-user key-value store, scoped to
+        you). Used only to power the &ldquo;Undo last week creation&rdquo;
+        action. The snapshot is automatically obsoleted after 24 hours
+        and overwritten the next time you create a week.
+      </li>
+    </ul>
+
+    <h2>Data sharing</h2>
+    <p>
+      The Add-on does not share your data with any third party. There
+      are no servers operated by the developer; no analytics services,
+      ad networks, or external APIs are contacted by the Add-on at any
+      point.
+    </p>
+
+    <h2>Limited Use disclosure (Google API Services)</h2>
+    <p>
+      Atlas Workout Tracker's use and transfer of information received
+      from Google APIs adheres to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">
+        Google API Services User Data Policy</a>, including the Limited
+      Use requirements. Specifically, data accessed via the listed
+      OAuth scopes is used solely to provide the Add-on's user-facing
+      workout-tracking features, is not used for advertising, is not
+      transferred to others, and is not used or read by humans except
+      for security or legal compliance purposes, or with your explicit
+      consent.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      The Add-on is not directed at children under 13. Use requires a
+      Google account, which has its own age requirements.
+    </p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>
+        <strong>Uninstall</strong> &mdash; remove the Add-on at any time
+        from your Google Workspace add-ons settings. This revokes all
+        OAuth grants and prevents the Add-on from accessing your sheets.
+      </li>
+      <li>
+        <strong>Delete the undo snapshot</strong> &mdash; the snapshot
+        auto-expires after 24 hours. To purge sooner, uninstall the
+        Add-on (uninstall removes all UserProperties for the Add-on).
+      </li>
+      <li>
+        <strong>Delete workout data</strong> &mdash; your workout data
+        lives in your spreadsheet. Delete cells, rows, or the whole
+        spreadsheet using normal Google Sheets controls.
+      </li>
+    </ul>
+
+    <h2>Changes to this policy</h2>
+    <p>
+      We may update this policy as the Add-on's behavior changes
+      (additional features, new scopes, etc.). Updates will be posted
+      here with a new &ldquo;Last updated&rdquo; date. Material changes
+      that affect what data the Add-on accesses will also be reflected
+      in the OAuth consent screen, which you will see again the next
+      time you authorize the Add-on.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy:
+      <a href="mailto:aetherlabs21@gmail.com">aetherlabs21@gmail.com</a>.
+    </p>
+  </main>
+
+  <footer class="site">
+    <div>&copy; 2026 Atlas Workout Tracker.</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="mailto:aetherlabs21@gmail.com">Contact</a>
+    </nav>
+  </footer>
+</div>
+</body>
+</html>
